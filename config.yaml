@@ -1,0 +1,15 @@
+- query: longevity
+  days: 7
+  max_lines: 300
+- query: anti-aging
+  days: 7
+  max_lines: 300
+- query: gerontology
+  days: 7
+  max_lines: 300
+- query: senescence
+  days: 7
+  max_lines: 300
+- query: healthspan
+  days: 7
+  max_lines: 300
