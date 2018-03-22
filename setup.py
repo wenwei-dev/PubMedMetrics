@@ -124,7 +124,7 @@ setup(
     # https://packaging.python.org/en/latest/requirements.html
     install_requires=[
         'altmetric', 'biopython', 'colorlog', 'pyyaml',
-        'requests', 'SQLAlchemy', 'progressbar2', 'unicodecsv'
+        'requests', 'SQLAlchemy', 'progressbar2', 'unicodecsv', 'numpy'
     ],
 
     # List additional groups of dependencies here (e.g. development
