@@ -1,12 +1,11 @@
+# https://gigabaseorgigabyte.wordpress.com/2017/08/08/a-twitter-bot-to-find-the-most-interesting-biorxiv-preprints/
 import logging
 from altmetric import Altmetric, AltmetricHTTPException
 
 logger = logging.getLogger(__name__)
 
 def queryAltmetric(pmid):
-    """
-    Check the altmetric journal percentile score of the publication
-    """
+    # Check the altmetric journal percentile score of the publication
     a = Altmetric()
     try:
         resp = a.pmid(pmid)
