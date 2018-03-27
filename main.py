@@ -40,6 +40,16 @@ def fetch_papers(args):
         try:
             PubMedTitle = paper['MedlineCitation']['Article']['ArticleTitle']
             PubMedTitle = PubMedTitle.replace('\n', ' ').strip()
+            
+            '''
+            # to be developed
+            if (PubMedTitle.startswith('"') and PubMedTitle.endswith('"')) or (PubMedTitle.startswith('[') and PubMedTitle.endswith(']')):
+	            PubMedTitle = PubMedTitle[1:-1]
+            elif ((PubMedTitle.startswith('"') and PubMedTitle.endswith('".') or PubMedTitle.startswith('[') and PubMedTitle.endswith('].'))):
+	            PubMedTitle = PubMedTitle[1:-2]
+            if PubMedTitle.startswith(('+', '-', '*', '/', '=')):
+	            PubMedTitle = "'" + PubMedTitle
+            '''
             PubMedID = paper['MedlineCitation']['PMID']
             PubMedURL = 'https://www.ncbi.nlm.nih.gov/pubmed/' + PubMedID
         except Exception as ex:
