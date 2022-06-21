@@ -4,7 +4,7 @@ certifi==2018.1.18
 chardet==3.0.4
 colorlog==3.1.2
 idna==2.6
-numpy==1.14.2
+numpy==1.22.0
 progressbar2==3.36.0
 PubMedMetrics==1.0.0
 python-utils==2.3.0
